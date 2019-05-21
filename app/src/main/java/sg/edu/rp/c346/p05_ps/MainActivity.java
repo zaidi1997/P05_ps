@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 int year = Integer.parseInt(etYear.getText().toString());
                 int selectedButtonId = rg.getCheckedRadioButtonId();
                 RadioButton rb = findViewById(selectedButtonId);
+                int star = Integer.parseInt(rb.getText().toString());
                 DBHelper dbh = new DBHelper(MainActivity.this);
                 long row_affected = dbh.insertSong(title, singer, year, star);
                 if (row_affected != -1){
