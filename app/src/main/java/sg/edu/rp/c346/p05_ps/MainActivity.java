@@ -55,5 +55,10 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        btnShow.setOnClickListener((v)->{
+            Intent i = new Intent(MainActivity.this, showsong.class);
+            startActivity(i);
+        });
     }
 }

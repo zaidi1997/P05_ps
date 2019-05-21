@@ -62,7 +62,7 @@ public class showsong extends AppCompatActivity {
                         EditActivity.class);
                 Song data = song.get(position);
 
-                Song target = new Song(data.getTitle(), data.getSingers(), data.getYear(), data.getStars());
+                Song target = new Song(data.getId(), data.getTitle(), data.getSingers(), data.getYear(), data.getStars());
                 i.putExtra("data", target);
                 startActivityForResult(i, 9);
             }
