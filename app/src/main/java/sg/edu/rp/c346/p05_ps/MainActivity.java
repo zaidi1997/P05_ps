@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
         btnShow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Intent i = new Intent(getBaseContext(), SecondActivity.class);
+                //startActivity(i);
 
             }
         });
