@@ -2,29 +2,30 @@ package sg.edu.rp.c346.p05_ps;
 
 public class Song {
 
-    private int _id;
+    private int id;
     private String title;
-    private String slingers;
+    private String singers;
     private int year;
     private int stars;
 
-    public Song(String title, String slingers, int year, int stars) {
+    public Song(int id, String title, String singers, int year, int stars) {
+        this.id = id;
         this.title = title;
-        this.slingers = slingers;
+        this.singers = singers;
         this.year = year;
         this.stars = stars;
     }
 
-    public int get_id() {
-        return _id;
+    public int getId() {
+        return id;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public String getSlingers() {
-        return slingers;
+    public String getSingers() {
+        return singers;
     }
 
     public int getYear() {
