@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.R;
 
 public class EditActivity extends AppCompatActivity {
 
@@ -25,6 +26,10 @@ public class EditActivity extends AppCompatActivity {
         etSinger = findViewById(R.id.etSinger);
         etYear = findViewById(R.id.etYear);
         radGroup = findViewById(R.id.radGroup);
+
+        btnCancel.setOnClickListener((v)->{
+            finish();
+        });
 
     }
 }
